@@ -1,12 +1,56 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/index/index",
+    "pages/classify/classify",
+    "pages/shoppingCart/shoppingCart",
+    "pages/My/My"
+  ],
+  "subPackages": [
+    {
+      "root": "subPages",
+      "pages": [
+        "Search/Search",
+        "Details/Details"
+      ]
+    }
   ],
   "window": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "uni-app",
-    "navigationBarBackgroundColor": "#F8F8F8",
+    "navigationBarBackgroundColor": "#ffffff",
     "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#e34969",
+    "borderStyle": "black",
+    "backgroundColor": "#FFFFFF",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/image/shouye.default.png",
+        "selectedIconPath": "static/image/shouye.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/classify/classify",
+        "iconPath": "static/image/fenlei.default.png",
+        "selectedIconPath": "static/image/fenlei.png",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/shoppingCart/shoppingCart",
+        "iconPath": "static/image/gouwuche.default.png",
+        "selectedIconPath": "static/image/gouwuche.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/My/My",
+        "iconPath": "static/image/wode.default.png",
+        "selectedIconPath": "static/image/wode.png",
+        "text": "我的"
+      }
+    ]
   },
   "usingComponents": {}
 }

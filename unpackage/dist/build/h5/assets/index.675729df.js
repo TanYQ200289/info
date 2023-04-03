@@ -1,0 +1,1 @@
+import{T as s,R as e,U as r}from"./index.37bf5aad.js";const a=s("user"),o=e("userInfo",{state:()=>({userInfo:a?JSON.parse(a):{}}),actions:{deleteUserInfo(){this.userInfo={},r("user")}}});export{o as u};

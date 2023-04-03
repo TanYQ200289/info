@@ -4,6 +4,11 @@ exports[Symbol.toStringTag] = "Module";
 var common_vendor = require("./common/vendor.js");
 if (!Math) {
   "./pages/index/index.js";
+  "./pages/classify/classify.js";
+  "./pages/shoppingCart/shoppingCart.js";
+  "./pages/My/My.js";
+  "./subPages/Search/Search.js";
+  "./subPages/Details/Details.js";
 }
 const _sfc_main = {
   onLaunch: function() {
@@ -19,6 +24,7 @@ const _sfc_main = {
 var App = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__file", "C:/Users/tyq/Documents/HBuilderProjects/\u4FE1\u5DE5\u9662\u6BD5\u4E1A\u8BBE\u8BA1/App.vue"]]);
 function createApp() {
   const app = common_vendor.createSSRApp(App);
+  app.use(common_vendor.uviewPlus);
   return {
     app
   };

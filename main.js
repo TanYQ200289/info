@@ -1,19 +1,16 @@
 import App from './App'
-
-// #ifndef VUE3
-import Vue from 'vue'
-Vue.config.productionTip = false
-App.mpType = 'app'
-const app = new Vue({
-    ...App
-})
-app.$mount()
-// #endif
-
+import uviewPlus from 'uview-plus';
+import { createPinia } from 'pinia'
+import { createSSRApp } from 'vue';
+import Http from "./api/index.js";
+import { $http } from '@escook/request-miniprogram'
+import "./uni.scss";
 // #ifdef VUE3
-import { createSSRApp } from 'vue'
+uni.Http = Http;
 export function createApp() {
   const app = createSSRApp(App)
+  app.use(uviewPlus);
+  app.use(createPinia())
   return {
     app
   }
